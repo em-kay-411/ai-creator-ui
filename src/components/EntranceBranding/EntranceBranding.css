@@ -1,0 +1,32 @@
+.brand-name {
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    letter-spacing: 6vw;
+    animation: appear 2s ease-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform : translate(3vw, 20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(3vw, 0);
+    }
+}
+
+@media screen and (orientation : portrait) {
+    .brand-name {
+        font-size: 8vh;
+        letter-spacing: 4vh !important;
+    }
+}
+
+.brand-letter {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1); 
+    /* ↑ smooth + bouncy */
+    will-change: transform;
+  }
+  

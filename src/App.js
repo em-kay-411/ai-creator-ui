@@ -1,21 +1,20 @@
 import React from "react";
 import "./App.css";
+import EntranceBranding from "./components/EntranceBranding/EntranceBranding";
+import MainContent from "./components/MainContent/MainContent";
 
 function App() {
+
   return (
     <div className="App">
-      <div className="brand-name"
-        style=
-        {{
-          fontSize : "10vw",
-          letterSpacing: "6vw",
-          color: "#ffd21f",
-          fontFamily: "Times New Roman",
-          transform: "translateX(3vw)"
-        }}>
-        BLANK
-      </div>
-    </div>
+      {/* <img src={logo} alt="" style={{
+        position : "fixed",
+        height : "900%",
+        opacity : "0.1"
+      }} /> */}
+      <EntranceBranding/>
+      <MainContent/>
+    </div>    
   );
 }
 
